@@ -1,0 +1,30 @@
+{
+  "name": "backend-cele-mandiri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaryan19/mysql-postgree-backend-individual-cele.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Zaryan19/mysql-postgree-backend-individual-cele/issues"
+  },
+  "homepage": "https://github.com/Zaryan19/mysql-postgree-backend-individual-cele#readme",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
