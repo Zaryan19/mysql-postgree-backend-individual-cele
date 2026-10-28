@@ -8,19 +8,19 @@ const router = express.Router();
 const eventController = require('../controllers/eventController');
 
 // GET semua data "event desa"
-router.get('/', eventController.getAllevent)
+router.get('/', eventController.getAllEvent)
 
 // GET data "event desa" berdasaarkan id
-router.get('/:id', eventController.geteventById)  
+router.get('/:id', eventController.getEventById)  
 
 // POST data "event desa" baru
-router.post('/', eventController.createevent)
+router.post('/', eventController.createEvent)
 
 // PUT UPDATE data "event desa"
-router.put('/:id', eventController.updateevent)
+router.put('/:id', eventController.updateEvent)
 
 // DELETE data "event desa"
-router.delete('/:id', eventController.deleteevent)
+router.delete('/:id', eventController.deleteEvent)
 
 // Mengekspor router agar bisa digunakan di server.js
 module.exports = router;
