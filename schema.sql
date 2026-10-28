@@ -108,3 +108,64 @@ CREATE TABLE event_umkm (
     CONSTRAINT fk_umkm_event FOREIGN KEY (umkm_id) REFERENCES umkm(id) ON DELETE CASCADE,
     CONSTRAINT uq_event_umkm UNIQUE (event_id, umkm_id) -- Mencegah UMKM didaftarkan ganda di 1 event yang sama
 );
+
+
+
+-- insert into
+INSERT INTO events (nama_event, deskripsi, tgl_mulai, tgl_selesai, lokasi, foto_banner) VALUES
+(
+    'Kerja Bakti Bersih Desa & Saluran Irigasi',
+    'Gotong royong warga membersihkan jalan poros desa, selokan, dan saluran irigasi sawah menyambut musim tanam.',
+    '2026-11-08 07:00:00',
+    '2026-11-08 11:30:00',
+    'Sepanjang Jalan Poros RW 01 - RW 03',
+    'https://images.unsplash.com/photo-1593113598332-cd288d649433'
+),
+(
+    'Posyandu Balita & Skrining Kesehatan Lansia',
+    'Pemeriksaan rutin tumbuh kembang balita, imunisasi dasar, serta cek tekanan darah dan gula darah gratis untuk lansia.',
+    '2026-11-12 08:30:00',
+    '2026-11-12 12:00:00',
+    'Balai Posyandu Mawar, Dusun Sukamaju',
+    'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982'
+),
+(
+    'Musyawarah Rencana Pembangunan Desa (Musrenbangdes)',
+    'Rapat koordinasi kepala desa, perangkat, BPD, dan tokoh masyarakat untuk penetapan skala prioritas pembangunan tahun depan.',
+    '2026-11-18 19:30:00',
+    '2026-11-18 22:30:00',
+    'Balai Desa Mandiri',
+    'https://images.unsplash.com/photo-1577962917302-cd874c4e31d2'
+),
+(
+    'Turnamen Bola Voli Antar-Dusun',
+    'Ajang silaturahmi dan olahraga pemuda karang taruna mempertemukan tim terbaik dari masing-masing dusun.',
+    '2026-11-21 14:00:00',
+    '2026-11-22 17:30:00',
+    'Lapangan Voli Dusun Krajan',
+    'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1'
+),
+(
+    'Penyuluhan Pengendalian Hama Padi & Pupuk Organik',
+    'Pelatihan dari petugas penyuluh pertanian lapangan (PPL) mengenai pembuatan pupuk cair mandiri dan pencegahan hama wereng.',
+    '2026-11-26 09:00:00',
+    '2026-11-26 12:30:00',
+    'Gazebo Pertemuan Kelompok Tani Tunas Harapan',
+    'https://images.unsplash.com/photo-1592982537447-7440770cbfc9'
+),
+(
+    'Pengajian Akbar & Santunan Anak Yatim',
+    'Peringatan hari besar keagamaan diisi tausiyah ulama kecamatan dan pemberian santunan bagi warga kurang mampu.',
+    '2026-12-04 19:00:00',
+    '2026-12-04 22:00:00',
+    'Masjid Jami Al-Hidayah, Dusun Selatan',
+    'https://images.unsplash.com/photo-1542810634-71277d95dcbb'
+),
+(
+    'Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD)',
+    'Pembagian bantuan tunai tahap akhir tahun bagi keluarga penerima manfaat yang terdata di sistem kependudukan desa.',
+    '2026-12-10 08:00:00',
+    '2026-12-10 14:00:00',
+    'Pendopo Kantor Kepala Desa',
+    'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c'
+);
