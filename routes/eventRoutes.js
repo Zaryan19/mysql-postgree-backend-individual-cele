@@ -4,23 +4,23 @@ const express = require('express');
 // Membuat instance router modular dari Express
 const router = express.Router();
 
-// Mengimpor controller event yang berisi logika manipulasi data database
+// Mengimpor controller event
 const eventController = require('../controllers/eventController');
 
 // GET semua data "event desa"
-router.get('/', eventController.getAllEvent)
+router.get('/', eventController.getAllEvent);
 
-// GET data "event desa" berdasaarkan id
-router.get('/:id', eventController.getEventById)  
+// GET data "event desa" berdasarkan id
+router.get('/:id', eventController.getEventById);
 
 // POST data "event desa" baru
-router.post('/', eventController.createEvent)
+router.post('/', eventController.createEvent);
 
 // PUT UPDATE data "event desa"
-router.put('/:id', eventController.updateEvent)
+router.put('/:id', eventController.updateEvent);
 
-// DELETE data "event desa"
-router.delete('/:id', eventController.deleteEvent)
+// DELETE data "event desa" 
+router.delete('/:id', eventController.deleteEvent);
 
 // Mengekspor router agar bisa digunakan di server.js
 module.exports = router;
